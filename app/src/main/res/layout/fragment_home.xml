@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/hero"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/hero_res" />
+
+        <View
+            android:id="@+id/islamic_dua"
+            android:layout_width="217dp"
+            android:layout_height="170dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/duahands" />
+
+        <TextView
+            android:id="@+id/zikar_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/viga"
+            android:gravity="center_vertical"
+            android:lineHeight="35sp"
+            android:text="@string/zikar_app"
+            android:textAppearance="@style/zikar_app" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zikar_app_name"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/viga"
+            android:text="Wednesday, May 20"
+            android:textColor="@color/white"
+
+            />
+
+        <TextView
+            android:id="@+id/islamic_calender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_marginLeft="11dp"
+            android:fontFamily="@font/viga"
+            android:text="3 Ramdan 1441 AH"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/islamic_calender"
+            android:layout_marginLeft="11dp"
+            android:fontFamily="@font/viga"
+            android:text="Gujranwala, Pakistan"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/prayer_time"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_below="@+id/hero"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/ptlogo" />
+        <TextView
+            android:id="@+id/pt_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prayer Times"
+            android:textColor="#020074"
+            android:textSize="16dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/prayer_time"
+            />
+
+        <ImageView
+            android:id="@+id/qibla"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_below="@+id/hero"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="70dp"
+            android:src="@drawable/qibla1" />
+
+        <TextView
+            android:id="@+id/qb_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qibla"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="65dp"
+            android:text="Qibla Direction"
+            android:textColor="#020074"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/count"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_below="@id/prayer_time"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/count" />
+        <TextView
+            android:id="@+id/ct_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tasbeeh Counter"
+            android:textColor="#020074"
+            android:textSize="16dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/count"
+            />
+
+        <ImageView
+            android:id="@+id/hands"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_below="@+id/qibla"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="110dp"
+            android:layout_marginRight="70dp"
+            android:src="@drawable/hands" />
+        <TextView
+            android:id="@+id/hands_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dua"
+            android:textColor="#020074"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/hands"
+            />
+
+        <View
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/hero_res" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Rights Reserved by GIFTEK"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/footer"
+            android:layout_marginTop="12dp"
+            />
+
+    </RelativeLayout>
+</layout>

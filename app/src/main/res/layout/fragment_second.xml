@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tasbeeh_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tasbeeh Counter"
+            android:textSize="20sp"
+            android:lineHeight="14sp"
+            android:textColor="#020074"
+            android:textFontWeight="400"
+            android:lineSpacingExtra="-29sp"
+            android:layout_below="@+id/hero"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Tap on elipse to start"
+            android:textSize="10sp"
+            android:textColor="#020074"
+            android:layout_below="@+id/tasbeeh_counter"
+            android:layout_centerHorizontal="true"
+            />
+
+        <View
+            android:id="@+id/hero"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/hero_res"
+            />
+
+        <View
+            android:id="@+id/islamic_dua"
+            android:layout_width="217dp"
+            android:layout_height="170dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/duahands" />
+
+        <TextView
+            android:id="@+id/zikar_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="56dp"
+            android:fontFamily="@font/viga"
+            android:gravity="center_vertical"
+            android:lineHeight="35sp"
+            android:text="@string/zikar_app"
+            android:textAppearance="@style/zikar_app" />
+
+        <FrameLayout
+            android:id="@+id/counterinc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+
+            <View
+                android:id="@+id/inner_circle"
+                android:layout_width="139dp"
+                android:layout_height="139dp"
+                android:background="@drawable/counter_circle"
+                />
+            <View
+                android:id="@+id/outer_circle"
+                android:layout_width="125dp"
+                android:layout_height="139dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/white_circle"
+                />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="50dp" />
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/button2"
+            android:layout_width="109dp"
+            android:layout_height="43dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/reset_btn"
+            android:paddingLeft="30dp"
+            android:paddingTop="8dp"
+            android:text="Reset"
+            android:layout_below="@id/counterinc"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/hero_res" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Rights Reserved by GIFTEK"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/footer"
+            android:layout_marginTop="12dp"
+            />
+
+
+    </RelativeLayout>
+</layout>
